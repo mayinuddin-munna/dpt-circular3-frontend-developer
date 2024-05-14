@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gray-100 px-4 py-5">
-      <div className="relative flex items-center justify-between  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="relative flex items-center justify-between mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <Link to="/" className="inline-flex items-center">
           <BoltIcon className="h-6 w-6 text-blue-500" />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
@@ -26,6 +26,14 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              About
             </NavLink>
           </li>
         </ul>
@@ -67,11 +75,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/sign-in"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
-                      >
-                        Login
+                      <Link to="/about" className="default">
+                        About
                       </Link>
                     </li>
                   </ul>
