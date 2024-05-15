@@ -8,8 +8,8 @@ This is a simple flight search application that allows users to filter flights b
 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
-cd flight-search-app
+git clone https://github.com/mayinuddin-munna/dpt-circular3-frontend-developer
+cd dpt-circular3-frontend-developer
 
 npm install //or
 yarn
@@ -18,7 +18,8 @@ npm run dev //or
 yarn run dev
 ```
 ### Technologies Used
-React
-JavaScript
-HTML
-CSS
+* React
+* JavaScript
+* JSX
+* HTML
+* TailwindCSS
